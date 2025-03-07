@@ -1,5 +1,6 @@
 {
   "name": "sveltenetics",
+  "type": "module",
   "version": "0.0.1",
   "scripts": {
     "front": "vite dev --host 0.0.0.0 --port 21000 --clearScreen false",
@@ -42,9 +43,9 @@
     "vite": "^5.0.3",
     "vitest": "^1.2.0"
   },
-  "type": "module",
   "dependencies": {
     "@aptos-labs/ts-sdk": "^1.33.1",
+    "@bothy/trucks": "^2.0.0",
     "@floating-ui/dom": "^1.6.11",
     "@lucide/lab": "^0.1.2",
     "@scure/bip39": "^1.5.4",
@@ -52,7 +53,6 @@
     "@skeletonlabs/tw-plugin": "^0.4.0",
     "@sveltejs/adapter-node": "^5.2.0",
     "@sveltejs/adapter-static": "^3.0.2",
-    "@bothy/trucks": "^2.0.0",
     "@zxing/browser": "0.1.5",
     "@zxing/library": "0.21.2",
     "animejs": "^3.2.2",
@@ -73,6 +73,6 @@
     "procedures": "^4.0.0",
     "svelte-preprocess": "^6.0.2",
     "tailwindcss": "^3.4.4",
-    "unocss": "0.61.3"
+    "unocss": "66.1.0-beta.3"
   }
 }
