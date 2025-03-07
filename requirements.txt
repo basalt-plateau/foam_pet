@@ -65,7 +65,7 @@ idna==3.10
     # via requests
 itsdangerous==2.2.0
     # via flask
-jinja2==3.1.5
+jinja2==3.1.6
     # via flask
 jsonschema==4.23.0
     # via somatic
@@ -201,7 +201,7 @@ ventures==3.0.0
     # via mech-pet (pyproject.toml)
 wcwidth==0.2.13
     # via prettytable
-websockets==15.0
+websockets==15.0.1
     # via sanic
 werkzeug==3.1.3
     # via flask

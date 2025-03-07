@@ -1,0 +1,3 @@
+[submodule "vehicles_frontend_vercel/sveltekit-boilerplate"]
+	path = vehicles_frontend_vercel/sveltekit-boilerplate
+	url = git@gitlab.com:bgraceful/sveltekit-boilerplate.git
