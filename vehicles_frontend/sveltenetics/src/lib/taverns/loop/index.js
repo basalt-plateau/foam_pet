@@ -1,7 +1,7 @@
 
 
 /*
-	import { loop } from '$lib/taverns/loop'
+	import { loop } from '$lib/taverns/loop/index.js'
 	 
 	const loop_1 = loop ({
 		wait: 2000,

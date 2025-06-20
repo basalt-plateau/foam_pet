@@ -18,10 +18,12 @@
 	aptos move run --assume-yes --function-id { Build_Address }::Module_Guest_Texts::Send --args String:Platform_1 String:Text_2
 """
 
+
 """
 	Guest:
 		aptos move run --assume-yes --function-id { Build_Address }::Module_Guest_Texts::Send --args String:Text_11 String:Topic_1
 """
+
 
 """
 	Producer:
@@ -145,3 +147,18 @@ open_account (account ["account 1"] ["private key"]);
 begin ();
 #movie_2 ();
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#

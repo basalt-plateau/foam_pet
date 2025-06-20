@@ -70,12 +70,12 @@ module Builder_01::Module_Hulls {
 		Text_Envelope__create
 	};
 	
-	const Limiter_Ruler_the_platform_with_writer_address_is_empty : u64 = 100000;
-	const Limiter_writer_has_less_than_the_amount_of_Octas_necessary_to_send : u64 = 100001;
-	const Limiter_the_hull_is_not_going : u64 = 100002;
-	const Limiter_Text_String_needs_to_be_less_than_one_hundred_characters : u64 = 100003;	
-	const Limiter_Refund_must_be_1_apt_or_fewer : u64 = 100004;	
-	const Limiter_Hull_String_needs_to_be_less_than_characters_limit : u64 = 100005;
+	const Limiter_Ruler_the_platform_with_writer_address_is_empty : u64 = 0xF000001;	
+	const Limiter_writer_has_less_than_the_amount_of_Octas_necessary_to_send : u64 = 0xF000002;
+	const Limiter_the_hull_is_not_going : u64 = 0xF000003;
+	const Limiter_Text_String_needs_to_be_less_than_one_hundred_characters : u64 = 0xF000004;	
+	const Limiter_Refund_must_be_1_apt_or_fewer : u64 = 0xF000005;	
+	const Limiter_Hull_String_needs_to_be_less_than_characters_limit : u64 = 0xF000006;
 	
 	const One_APT : u64 = 100000000;
 	

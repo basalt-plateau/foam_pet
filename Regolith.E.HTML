@@ -7,7 +7,33 @@
 		<header>Mech_Pet</header>
 			.Metro
 			.Basalt
+			
+			Ploy.Rodeo
 	</nav>
+	
+	<article>
+		<header>Map</header>
+		
+			
+			Aptos Move Code :: Hull
+		
+			
+		
+			?? Frontend ::::: vehicles_frontend
+			
+			
+			Vult Publication :: 
+			
+		<header>Modes</header>
+			localStorage.setItem ("mode", "nurture")
+			localStorage.setItem ("producer", "yup")
+	
+	</article>
+	
+	<article>
+	
+	
+	</article>
 	
 	<article>
 	
@@ -38,9 +64,6 @@
 		<header>on</header>
 			<header>session 1</header>
 			<code>
-				docker run --name Mech_Pet -v .:/Metro -e HOST_IP=host.docker.internal -p 22000:22000 -p 21000:21000 -p 443:443 -p 80:80 -it boat:v1.0.0 bash
-				
-				
 				docker stop Ploy_Rodeo && docker rm Ploy_Rodeo
 				docker run --name Ploy_Rodeo -v .:/Metro -e HOST_IP=host.docker.internal -p 22000:22000 -p 21000:21000 -p 443:443 -p 80:80 -it ubuntu:latest bash
 				
@@ -81,7 +104,14 @@
 					(cd /Metro/vehicles_frontend/sveltenetics && rm -rf node_modules)
 					(cd /Metro/vehicles_frontend/sveltenetics && pnpm build_frontend)
 			
-				<header>dev mode</header>
+
+				<header>Vercel Build</header>
+					(cd /Metro/vehicles_frontend_vercel/sveltekit-boilerplate && pnpm run front)
+					localStorage.setItem ("mode", "nurture")
+					localStorage.setItem ("origin_address", "http://localhost:22000")
+			
+			
+				<header>Ancient Build (Discontinued)</header>
 					(cd /Metro/vehicles_frontend/sveltenetics && pnpm run front)
 					localStorage.setItem ("mode", "nurture")
 					localStorage.setItem ("origin_address", "http://localhost:22000")
