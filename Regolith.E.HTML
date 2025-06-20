@@ -60,8 +60,8 @@
 				docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q)
 			</code>
 		</article>
-	
-		<header>on</header>
+		
+		<article>
 			<header>session 1</header>
 			<code>
 				docker stop Ploy_Rodeo && docker rm Ploy_Rodeo
@@ -77,14 +77,35 @@
 			</code>
 		</article>
 		
-		<header>on moves</header>
-			<header>session 1</header>
+		<article>
+			<header>Vercel Build (Submodule)</header>
+				//
+				// 	This might not work with the python
+				// 	server yet.....
+				//
+				//	Might need to configure the build
+				//	directory of this to overwrite
+				//	the python sveltnetics... or something.
+				//
+				//	Then after that... can probably delete the
+				// 	"vehicles_frontend" directory.....
+				//
+			
+			<header>Run Dev Mode</header>
 			<code>
-				docker compose up -d
-				docker exec -it Mech_Pet.1 bash -c "bash"
-				. /Metro/_plays/board/build_1.sh
+				(cd /Metro/vehicles_frontend_vercel/sveltekit-boilerplate && pnpm run front)
+				localStorage.setItem ("mode", "nurture")
+				localStorage.setItem ("origin_address", "http://localhost:22000")
 			</code>	
+			
+			<header>Install</header>
 
+
+
+			<header>Publish to Vercel</header>
+				cd vehicles_frontend_vercel/sveltekit-boilerplate
+				git 
+			
 		</article>
 		
 		<header></header>
@@ -105,7 +126,7 @@
 					(cd /Metro/vehicles_frontend/sveltenetics && pnpm build_frontend)
 			
 
-				<header>Vercel Build</header>
+				<header>Vercel Build (Submodule)</header>
 					(cd /Metro/vehicles_frontend_vercel/sveltekit-boilerplate && pnpm run front)
 					localStorage.setItem ("mode", "nurture")
 					localStorage.setItem ("origin_address", "http://localhost:22000")
