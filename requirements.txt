@@ -119,7 +119,7 @@ pydash==8.0.5
     #   mech-pet (pyproject.toml)
     #   ships
     #   ventures
-pygments==2.19.1
+pygments==2.19.2
     # via
     #   emergency
     #   rich

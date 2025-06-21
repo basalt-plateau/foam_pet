@@ -14,10 +14,8 @@
 	<article>
 		<header>Map</header>
 		
-			
+
 			Aptos Move Code :: Hull
-		
-			
 		
 			?? Frontend ::::: vehicles_frontend
 			
@@ -66,7 +64,6 @@
 			<code>
 				docker stop Ploy_Rodeo && docker rm Ploy_Rodeo
 				docker run --name Ploy_Rodeo -v .:/Metro -e HOST_IP=host.docker.internal -p 22000:22000 -p 21000:21000 -p 443:443 -p 80:80 -it ubuntu:latest bash
-				
 				. /Metro/_plays/board/build_1.sh
 			</code>	
 				
@@ -103,6 +100,8 @@
 
 
 			<header>Publish to Vercel</header>
+				(cd /Metro/vehicles_frontend_vercel/sveltekit-boilerplate && git add --all && git commit -m "Vercel" )
+			
 				cd vehicles_frontend_vercel/sveltekit-boilerplate
 				git 
 			
