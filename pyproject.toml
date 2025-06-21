@@ -48,6 +48,14 @@ cx_Freeze = "^7.2.3"
 pipdeptree = "^2.23.4"
 pip-licenses = "^5.0.0"
 
+
+#
+#
+#	This one is because... "ships" is broken.. or something.
+#
+#
+pyasyncore = "^1.0.4"
+
 # ecdsa = "0.18.0"
 # h2 = "^4.1.0"
 # httpx = "^0.24.0"

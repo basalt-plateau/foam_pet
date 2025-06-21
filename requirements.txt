@@ -114,6 +114,8 @@ psutil==5.9.8
     #   ships
 ptyprocess==0.7.0
     # via pexpect
+pyasyncore==1.0.4
+    # via mech-pet (pyproject.toml)
 pydash==8.0.5
     # via
     #   mech-pet (pyproject.toml)

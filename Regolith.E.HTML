@@ -47,31 +47,32 @@
 	</article>
 	
 	<main>	
-		<article>	
-			<header>perhaps: stop docker containers</header>
-			<code>
-				#
-				#
-				#	:(
-				#
-				#
-				docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q)
-			</code>
-		</article>
-		
 		<article>
-			<header>session 1</header>
-			<code>
-				docker stop Ploy_Rodeo && docker rm Ploy_Rodeo
-				docker run --name Ploy_Rodeo -v .:/Metro -e HOST_IP=host.docker.internal -p 22000:22000 -p 21000:21000 -p 443:443 -p 80:80 -it ubuntu:latest bash
-				. /Metro/_plays/board/build_1.sh
-			</code>	
+			<header>Turning On</header>
+		
+			<section>
+				<header>optional:::: stop docker containers</header>
+				<code>
+					docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q)
+				</code>
+			</section>
+		
+			<section>
+				<header>Session 1</header>
+				<code>
+					docker stop Ploy_Rodeo && docker rm Ploy_Rodeo
+					docker run --name Ploy_Rodeo -v .:/Metro -e HOST_IP=host.docker.internal -p 22000:22000 -p 21000:21000 -p 443:443 -p 80:80 -it ubuntu:latest bash
+					. /Metro/_plays/board/build_1.sh
+				</code>	
+			</section>
 				
-			<header>session 2</header>
-			<code>	
-				docker exec -it Ploy_Rodeo bash -c "bash"
-				. /Metro/_plays/board/build_2.sh
-			</code>
+			<section>
+				<header>Session 2</header>
+				<code>	
+					docker exec -it Ploy_Rodeo bash -c "bash"
+					. /Metro/_plays/board/build_2.sh
+				</code>
+			</section>
 		</article>
 		
 		<article>
@@ -98,8 +99,10 @@
 			<header>Install</header>
 
 
-
 			<header>Publish to Vercel</header>
+				(cd /Metro/vehicles_frontend_vercel/sveltekit-boilerplate && pnpm run front)
+			
+			
 				(cd /Metro/vehicles_frontend_vercel/sveltekit-boilerplate && git add --all && git commit -m "Pannier" )
 			
 				cd vehicles_frontend_vercel/sveltekit-boilerplate
@@ -107,8 +110,17 @@
 			
 		</article>
 		
-		<header></header>
-			<header>ventures</header>
+		<article>
+			<header>Offline Python Module....</header>
+				
+				Mech_Pet_1 harbor open
+				
+			
+		</article>
+		
+		
+		<article>
+			<header>With "Python Server" + "Reverse Proxy".....</header>
 				
 				Mech_Pet_1 demux_hap build_unverified_certificates
 				Mech_Pet_1 ventures on
@@ -119,16 +131,13 @@
 				#
 				#
 			
-			<h3>svelte</h3>
+			<h3>Ancient (Might still be relevant for building for offline version)</h3>
 				<header>install</header>
 					(cd /Metro/vehicles_frontend/sveltenetics && rm -rf node_modules)
 					(cd /Metro/vehicles_frontend/sveltenetics && pnpm build_frontend)
 			
 
-				<header>Vercel Build (Submodule)</header>
-					(cd /Metro/vehicles_frontend_vercel/sveltekit-boilerplate && pnpm run front)
-					localStorage.setItem ("mode", "nurture")
-					localStorage.setItem ("origin_address", "http://localhost:22000")
+
 			
 			
 				<header>Ancient Build (Discontinued)</header>
@@ -156,7 +165,10 @@
 					
 				<haeder>build licenses</header>
 					(cd /Metro/vehicles_frontend/sveltenetics && pnpm run build_licenses)
-					
+		
+		</article>
+
+			
 		<header>health</header>
 			<header>Selenium</header>
 				#
