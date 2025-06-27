@@ -3,6 +3,12 @@
 	python setup.py build
 "'''
 
+''''
+	??
+		This perhaps run after pypi publication is published?
+
+"'''
+
 from cx_Freeze import setup, Executable
 
 '''

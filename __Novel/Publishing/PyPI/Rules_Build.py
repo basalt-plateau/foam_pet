@@ -37,16 +37,19 @@ import subprocess
 
 #--
 #
-Rules_Path = "/Metro/vehicles/Mech_Pet/Rules/Modules"
-FE_Path = "/Metro/vehicles_frontend/sveltenetics"
+FE_Path = "/Metro/Frontend_Vercel"
+Python_Module_Path = "/Metro/vehicles/Mech_Pet"
+#
+#
+Rules_Path = Python_Module_Path + "/Rules/Modules"
 #
 #
 Rules_Path_FE = Rules_Path + "/Frontend"
 Rules_Path_BE = Rules_Path + "/Python3"
 #
 #
-Original_Rules_Path_PyPI = "/Metro/vehicles/Mech_Pet/Rules/Originals"
-Original_Rules_Path_Svelte = "/Metro/vehicles_frontend/sveltenetics/static/Rules/Originals"
+Original_Rules_Path_PyPI = Python_Module_Path + "/Rules/Originals"
+Original_Rules_Path_Svelte = FE_Path + "/static/Rules/Originals"
 #
 Sveltenetics_Static_Path = FE_Path + "/static/Rules/Modules"
 #

@@ -6,23 +6,29 @@
 
 	<header>publish</header>
 		
-	<header>Ventures Vows</header>
+		
+		
+	<article>
+		<header>(Opitional?)</header>
 			#
 			#	Change the app mode to "business" 
 			#		_essence/merge/__init__.py
 			#
-			. /Metro/_plays/board/build_1.sh
-			. /Metro/_plays/board/build_2.sh
 			
+				
+				
+				
+		<header>1.</header>
+			. /Metro/_plays/board/build_1.sh
 			
 			#//
 			#/
 			#	Frontend: Vitest + Lint
 			#
 			#
-			(cd /Metro/vehicles_frontend/sveltenetics && pnpm run health)
-			(cd /Metro/vehicles_frontend/sveltenetics && pnpm run lint)
-			
+			(cd /Metro/Frontend_Vercel && pnpm run health)
+			(cd /Metro/Frontend_Vercel && pnpm run lint)
+				
 			#
 			#
 			#	Frontend: Build
@@ -31,13 +37,18 @@
 			#			package.json
 			#			svelte.config.js
 			#
-			#
 			#		Rules.. builds the frontend
 			#
-			(cd /Metro/vehicles_frontend/sveltenetics && pnpm run build_frontend)
-			
+			(cd /Metro/Frontend_Vercel && pnpm run build_for_python)
+				
 
-			
+
+		#
+		#
+		#	Either Ventures or CX_Freeze Habor..
+		#
+		#
+		<header>Option 2a. Ventures Vows (Opitional)</header>
 			#
 			#
 			#	Backend: Build
@@ -46,15 +57,21 @@
 			Mech_Pet_1 demux_hap build_unverified_certificates
 			Mech_Pet_1 ventures refresh
 			
+			
+		<header>Option 2b. Ventures Vows (Opitional)</header>
+			Mech_Pet_1 harbor open
+		
+		
+		<header>3.</header>
 			#
 			#
-			#	Backend: Health Monitor
+			#	Python: Internal Health Monitor
 			#
 			#
 			Mech_Pet_1 health
-			# python3 /Metro/vehicles/foam_pet/_health/health.proc.py
-			
-			
+				
+				
+	
 			#
 			#	Rules: 
 			#		This builds the frontend and backend rules.
@@ -123,9 +140,9 @@
 			cd /Metro/vehicles_pypi
 			docker run --name hemoglycin_docker_1 -e HOST_IP=host.docker.internal -p 22000:22000 -p 443:443 -p 80:80 -it jumps:v2.1.0 bash
 			pip install foam_pet
+			
 		
-	
-
+	</article>
 
 
 </pre>
