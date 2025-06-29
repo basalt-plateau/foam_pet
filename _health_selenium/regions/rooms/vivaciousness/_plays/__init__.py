@@ -26,7 +26,7 @@ def flask_build ():
 
 def dev_build ():
 	open_browser = "yes"
-	URL = "http://localhost:21000"
+	URL = "http://172.17.0.2:21000"
 	has_memo = "no"
 	
 	return [ open_browser, URL, has_memo ]
@@ -62,7 +62,7 @@ def online_build ():
 
 
 def retrieve_plays ():
-	[ open_browser, URL, has_memo ] = flask_build ();
+	[ open_browser, URL, has_memo ] = dev_build ();
 	
 	return {
 		#

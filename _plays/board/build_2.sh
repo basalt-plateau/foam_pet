@@ -11,6 +11,9 @@ deactivate
 . /Metro/.venv/bin/activate
 
 
+git config --global --add safe.directory /Metro/Frontend_Vercel
+
+
 export PATH="/root/.local/bin:$PATH"
 
 #\

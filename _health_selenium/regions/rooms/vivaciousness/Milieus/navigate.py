@@ -34,6 +34,7 @@ import time
 def Milieus_Navigate_to_Greetings (packet):
 	driver = packet ["driver"]
 	
+	'''
 	def open_wallet ():
 		def find_button ():
 			return driver.find_element (
@@ -45,12 +46,15 @@ def Milieus_Navigate_to_Greetings (packet):
 		driver.execute_script("arguments[0].click();", button)
 	
 	open_wallet ();
+	'''
+	
+	
 	
 	def go ():
 		def find_button ():
 			return driver.find_element (
 				By.CSS_SELECTOR, 
-				f'button[monitor="Bourgeoisie"]'
+				f'[monitor="magma"] button[monitor="Pannier"]'
 			)
 		
 		button = loop (lambda : find_button ())
@@ -60,6 +64,19 @@ def Milieus_Navigate_to_Greetings (packet):
 		#button.click ();
 	
 	go ();
+	
+	
+	def confirm_legality ():
+		def find_button ():
+			return driver.find_element (
+				By.CSS_SELECTOR, 
+				f'button[monitor="legality_confirmation"]'
+			)
+			
+		button = loop (lambda : find_button ())
+		driver.execute_script("arguments[0].click();", button)
+	
+	confirm_legality ()
 
 
 

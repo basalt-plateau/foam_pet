@@ -60,17 +60,21 @@
 			<section>
 				<header>Session 1</header>
 				<code>
+				
 					docker stop Ploy_Rodeo && docker rm Ploy_Rodeo
 					docker run --name Ploy_Rodeo -v .:/Metro -e HOST_IP=host.docker.internal -p 22000:22000 -p 21000:21000 -p 443:443 -p 80:80 -it ubuntu:latest bash
 					. /Metro/_plays/board/build_1.sh
+					
 				</code>	
 			</section>
 				
 			<section>
 				<header>Session 2</header>
 				<code>	
+				
 					docker exec -it Ploy_Rodeo bash -c "bash"
 					. /Metro/_plays/board/build_2.sh
+					
 				</code>
 			</section>
 		</article>
@@ -102,17 +106,23 @@
 			
 			<header>Run Dev Mode</header>
 			<code>
+			
 				(cd /Metro/Frontend_Vercel && pnpm run front)
 				localStorage.setItem ("mode", "nurture")
 				localStorage.setItem ("origin_address", "http://localhost:22000")
+				
 			</code>	
 			
 
 
 			<header>Publish to Vercel</header>
-				(cd /Metro/vehicles_frontend_vercel/sveltekit-boilerplate && pnpm run front)
-			
-				(cd /Metro/vehicles_frontend_vercel/sveltekit-boilerplate && git add --all && git commit -m "Pannier" )
+				(cd /Metro/Frontend_Vercel && pnpm run front)
+				(cd /Metro/Frontend_Vercel && pnpm run health)
+
+				E2E:
+					
+				
+				(cd /Metro/Frontend_Vercel && git add --all && git commit -m "Pannier" )
 			
 				cd vehicles_frontend_vercel/sveltekit-boilerplate
 				git 
