@@ -23,9 +23,9 @@ botanist==1.0.0
     #   biotech
     #   body-scan
     #   emergency
-certifi==2025.6.15
+certifi==2025.8.3
     # via requests
-charset-normalizer==3.4.2
+charset-normalizer==3.4.3
     # via requests
 click==8.2.1
     # via
@@ -37,7 +37,7 @@ click==8.2.1
     #   law-dictionary
     #   somatic
     #   ventures
-coverage==7.9.1
+coverage==7.10.6
     # via
     #   biotech
     #   emergency
@@ -47,9 +47,9 @@ dnspython==2.7.0
     # via pymongo
 emergency==2.0.0
     # via mech-pet (pyproject.toml)
-filelock==3.18.0
+filelock==3.19.1
     # via cx-freeze
-flask==3.1.1
+flask==3.1.2
     # via
     #   biotech
     #   body-scan
@@ -67,7 +67,7 @@ itsdangerous==2.2.0
     # via flask
 jinja2==3.1.6
     # via flask
-jsonschema==4.24.0
+jsonschema==4.25.1
     # via somatic
 jsonschema-specifications==2025.4.1
     # via jsonschema
@@ -78,7 +78,7 @@ mako==1.3.10
     #   biotech
     #   emergency
     #   somatic
-markdown-it-py==3.0.0
+markdown-it-py==4.0.0
     # via rich
 markupsafe==3.0.2
     # via
@@ -88,23 +88,23 @@ markupsafe==3.0.2
     #   werkzeug
 mdurl==0.1.2
     # via markdown-it-py
-multidict==6.6.2
+multidict==6.6.4
     # via sanic
 packaging==25.0
     # via
     #   cx-freeze
     #   pipdeptree
-patchelf==0.17.2.2
+patchelf==0.17.2.4
     # via cx-freeze
 pexpect==4.9.0
     # via
     #   biotech
     #   emergency
-pip==25.1.1
+pip==25.2
     # via pipdeptree
 pip-licenses==5.0.0
     # via mech-pet (pyproject.toml)
-pipdeptree==2.26.1
+pipdeptree==2.28.0
     # via mech-pet (pyproject.toml)
 prettytable==3.16.0
     # via pip-licenses
@@ -127,15 +127,15 @@ pygments==2.19.2
     #   rich
 pyinotify==0.9.6
     # via ships
-pyjwt==2.9.0
+pyjwt==2.10.1
     # via redis
-pymongo==4.13.2
+pymongo==4.14.1
     # via
     #   biotech
     #   emergency
 pyyaml==6.0.2
     # via sanic-ext
-redis==5.3.0
+redis==5.3.1
     # via
     #   biotech
     #   emergency
@@ -143,7 +143,7 @@ referencing==0.36.2
     # via
     #   jsonschema
     #   jsonschema-specifications
-requests==2.32.4
+requests==2.32.5
     # via
     #   mech-pet (pyproject.toml)
     #   biotech
@@ -157,7 +157,7 @@ rich==13.9.4
     #   ships
     #   somatic
     #   ventures
-rpds-py==0.25.1
+rpds-py==0.27.1
     # via
     #   jsonschema
     #   referencing
@@ -191,12 +191,12 @@ tomli==2.2.1
     # via pip-licenses
 tracerite==1.1.3
     # via sanic
-typing-extensions==4.14.0
+typing-extensions==4.15.0
     # via
     #   pydash
     #   referencing
     #   sanic
-ujson==5.10.0
+ujson==5.11.0
     # via sanic
 urllib3==2.5.0
     # via requests

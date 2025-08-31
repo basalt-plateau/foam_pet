@@ -1,19 +1,18 @@
 
 
 
-# Mech Pet
-![Mech Pet](vehicles_frontend/sveltenetics/static/pictures/Foam_Pet_0001.svg)
+# Octave Nexus
+![Octave Nexus](vehicles_frontend/sveltenetics/static/pictures/Foam_Pet_0001.svg)
 
-A pet on an offline machine (such as a laptop or desktop)  
-can interact with https://mech.pet
+A nexus on an offline machine (such as a laptop or desktop)  
+can interact with https://octave.nexus
 
 By doing so, ultra safe Aptos (APT) transactions can happen.  
 https://aptosfoundation.org
 
-Both machines need a camera (bionic eye) and screen.  
+Both machines need a camera and screen.  
 
-A pet for a Linux_x86_64 machine or docker     
-can be adopted from releases:
+A nexus for a Linux_x86_64 machine can be obtained from releases:
 https://github.com/basalt-plateau/mech_pet/releases
 
 ----
@@ -35,21 +34,13 @@ The download for Linux is at:
 ----
 
 ## Downloads :: PyPI
-This is the pet with a PyPI vehicle.    
+This is the nexus as a PyPI package.    
 [https://pypi.org/project/mech_pet](https://pypi.org/project/mech_pet)
 
 ----
 
 ## Details
 [Regolith.E.HTML](Regolith.E.HTML) has the details.  
-
-
-## Ancestors  
-For various reasons (mostly licensing) the .git repository   
-has been refreshed a few times.   
-   
-This is a previous repository:
-[https://github.com/basalt-plateau/mech_pet_G1](https://github.com/basalt-plateau/foam_pet_G1)    
 
 
 ## Amplifications
