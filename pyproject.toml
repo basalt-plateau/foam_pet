@@ -1,33 +1,31 @@
 
+
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
-#[build-system]
-#requires = ["cx_Freeze>=6.0"]
-#build-backend = "cx_Freeze"
-
 [tool.poetry]
-name = "Mech_Pet"
-version = "3.0.0"
-description = "A mechanical pet that can play with Aptos from offline."
+name = "Octave"
+version = "1.0.0"
+description = "Offline wallet program for Aptos."
 authors = []
-readme = "vehicles/Mech_Pet/readme.md"
+readme = "vehicles/Octave/readme.md"
 packages = [
-    { include = "Mech_Pet", from = "vehicles" },
+    { include = "Octave", from = "vehicles" },
 ]
 license = "Mix: GPL-3.0-only for originals + Laboratory Rules"
 
 exclude = [
-	"vehicles/Mech_Pet/_status/DB/**"
+	"vehicles/Octave/_status/DB/**"
 ]
 include = [
-	"vehicles/Mech_Pet/sveltnetics_packets/**/*",
+	"vehicles/Octave/sveltnetics_packets/**/*",
 ]
 
 
 [tool.poetry.scripts]
-Mech_Pet = 'Mech_Pet:clique'
+Octave = 'Octave:clique'
 
 [tool.poetry.dependencies]
 python = "^3.10"

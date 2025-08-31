@@ -15,11 +15,9 @@
 	<article>
 		<header>Map</header>
 		
-
 			Aptos Move Code :: Hull
 		
 			?? Frontend ::::: vehicles_frontend
-			
 			
 			Vult Publication :: 
 			
@@ -29,20 +27,17 @@
 	
 	</article>
 	
-	<article>
-	
-	
-	</article>
+
 	
 	<article>
 	
 		//
-		// Petra:  f5565cc1d71781d6ef766a2a50ed459b9d3b430ceb6f7bbf79393c3626a979cd
+		// Petra:  	f5565cc1d71781d6ef766a2a50ed459b9d3b430ceb6f7bbf79393c3626a979cd
 		//
-		// Foam 1: 652b8d45aebc4237cb4a4ca1d8b99725d8f973676844fe85eb09286d7f9d3808
-		// Foam 2: af545705ec7dbc1630376fd22313c973e5e8a4edd51343a1ddd05353e72fd5bf
+		// Foam 1: 	652b8d45aebc4237cb4a4ca1d8b99725d8f973676844fe85eb09286d7f9d3808
+		// Foam 2: 	af545705ec7dbc1630376fd22313c973e5e8a4edd51343a1ddd05353e72fd5bf
 		//
-		//	Dev: 0C1218C9ABC123C812359AB7689AB765C89EABCAD9E8CBE9F8CBE9DABC8F152C
+		//	Dev: 	0C1218C9ABC123C812359AB7689AB765C89EABCAD9E8CBE9F8CBE9DABC8F152C
 		//
 	
 	</article>
@@ -63,7 +58,9 @@
 				<code>
 				
 					docker stop Ploy_Rodeo && docker rm Ploy_Rodeo
-					docker run --name Ploy_Rodeo -v .:/Metro -e HOST_IP=host.docker.internal -p 22000:22000 -p 21000:21000 -p 443:443 -p 80:80 -it ubuntu:latest bash
+					
+					docker stop Octave_Nexus && docker rm Octave_Nexus				
+					docker run --name Octave_Nexus -v .:/Metro -e HOST_IP=host.docker.internal -p 22000:22000 -p 21000:21000 -p 443:443 -p 80:80 -it ubuntu:latest bash
 					. /Metro/_plays/board/build_1.sh
 					
 				</code>	
@@ -73,7 +70,7 @@
 				<header>Session 2</header>
 				<code>	
 				
-					docker exec -it Ploy_Rodeo bash -c "bash"
+					docker exec -it Octave_Nexus bash -c "bash"
 					. /Metro/_plays/board/build_2.sh
 					
 				</code>
@@ -122,7 +119,6 @@
 
 				E2E:
 					
-				
 				(cd /Metro/Frontend_Vercel && git add --all && git commit -m "Pannier" )
 			
 				cd vehicles_frontend_vercel/sveltekit-boilerplate
@@ -131,7 +127,7 @@
 		</article>
 		
 		<article>
-			<header>Offline Python Module....</header>
+			<header>Python Module</header>
 				
 				(cd /Metro/Frontend_Vercel && pnpm run front)
 				Mech_Pet_1 harbor open
@@ -156,10 +152,6 @@
 				<header>install</header>
 					(cd /Metro/vehicles_frontend/sveltenetics && rm -rf node_modules)
 					(cd /Metro/vehicles_frontend/sveltenetics && pnpm build_frontend)
-			
-
-
-			
 			
 				<header>Ancient Build (Discontinued)</header>
 					(cd /Metro/vehicles_frontend/sveltenetics && pnpm run front)

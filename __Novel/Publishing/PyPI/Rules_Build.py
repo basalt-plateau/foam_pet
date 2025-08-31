@@ -38,7 +38,7 @@ import subprocess
 #--
 #
 FE_Path = "/Metro/Frontend_Vercel"
-Python_Module_Path = "/Metro/vehicles/Mech_Pet"
+Python_Module_Path = "/Metro/vehicles/Octave"
 #
 #
 Rules_Path = Python_Module_Path + "/Rules/Modules"
@@ -64,6 +64,11 @@ def system_proc (screenplay):
 	os.system (screenplay);
 
 def proc (screenplay):
+	print ({
+		"screenplay": screenplay,
+		"FE_Path": FE_Path
+	});
+
 	result = subprocess.run(
 		screenplay, 
 		cwd = FE_Path,
