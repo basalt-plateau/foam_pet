@@ -16,9 +16,7 @@
 		<header>Map</header>
 		
 			Aptos Move Code :: Hull
-		
 			?? Frontend ::::: vehicles_frontend
-			
 			Vult Publication :: 
 			
 		<header>Modes</header>
@@ -27,10 +25,9 @@
 	
 	</article>
 	
-
 	
 	<article>
-	
+		
 		//
 		// Petra:  	f5565cc1d71781d6ef766a2a50ed459b9d3b430ceb6f7bbf79393c3626a979cd
 		//
@@ -39,7 +36,7 @@
 		//
 		//	Dev: 	0C1218C9ABC123C812359AB7689AB765C89EABCAD9E8CBE9F8CBE9DABC8F152C
 		//
-	
+		
 	</article>
 	
 	<main>	
@@ -57,8 +54,6 @@
 				<header>Session 1</header>
 				<code>
 				
-					docker stop Ploy_Rodeo && docker rm Ploy_Rodeo
-					
 					docker stop Octave_Nexus && docker rm Octave_Nexus				
 					docker run --name Octave_Nexus -v .:/Metro -e HOST_IP=host.docker.internal -p 22000:22000 -p 21000:21000 -p 443:443 -p 80:80 -it ubuntu:latest bash
 					. /Metro/_plays/board/build_1.sh
@@ -74,6 +69,17 @@
 					. /Metro/_plays/board/build_2.sh
 					
 				</code>
+			</section>
+			
+			<section>
+				<header>Create Docker Image</header>
+				
+					docker commit {container_id} octave_nexus.docker
+					
+					// docker save -o <path_to_tar_file> <image_name>
+					docker save -o octave_nexus.docker octave_nexus.docker
+
+					
 			</section>
 		</article>
 		
@@ -173,7 +179,6 @@
 					#	This does a forget as well.
 					#
 					(cd /Metro/vehicles_frontend/sveltenetics && pnpm run build)
-					
 					# (cp -R /Metro/vehicles_frontend/sveltenetics/src /Metro/vehicles/Mech_Pet/sveltnetics_src)
 					
 				<haeder>build licenses</header>

@@ -1,2 +1,0 @@
-import{s,n,d as o,i,c,h as l,e as m}from"../chunks/DvEjF3C_.js";import{S as p,i as d}from"../chunks/BCjzqIqm.js";const u=!0,g=Object.freeze(Object.defineProperty({__proto__:null,prerender:u},Symbol.toStringTag,{value:"Module"}));function _(r){let e;return{c(){e=m("div")},l(t){e=c(t,"DIV",{}),l(e).forEach(o)},m(t,a){i(t,e,a)},p:n,i:n,o:n,d(t){t&&o(e)}}}class v extends p{constructor(e){super(),d(this,e,null,_,s,{})}}export{v as component,g as universal};
-//# sourceMappingURL=2.C99Zticc.js.map
