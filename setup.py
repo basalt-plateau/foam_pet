@@ -21,7 +21,7 @@ build_exe_options = {
 
 # .py_3_11
 
-version = "v3_0_0_0"
+version = "v1_1_0_0"
 
 
 #
@@ -29,7 +29,7 @@ version = "v3_0_0_0"
 #	OS: Linux
 #
 #
-name = f"Mech_Pet.linux-x86_64.{ version }"
+name = f"octave_nexus.linux-x86_64.{ version }"
 
 #base = "Win32GUI"
 base = "gui"
@@ -41,7 +41,7 @@ base = "gui"
 #
 
 setup(
-    name = "Mech_Pet_cx",
+    name = "octave_nexus_cx",
     version = "0.1",
     description = "",
     options = {
@@ -56,11 +56,11 @@ setup(
 	},
     executables = [
 		Executable (
-			"vehicles/Mech_Pet/Mech_Pet.py", 
+			"vehicles/octave_nexus/octave_nexus.py", 
 			base = base
 		),
 		Executable (
-			"vehicles/Mech_Pet/clap.py", 
+			"vehicles/octave_nexus/clap.py", 
 			base = base
 		)
 	],

@@ -35,6 +35,10 @@ import os
 import subprocess
 
 
+'''
+
+'''
+
 #--
 #
 FE_Path = "/Metro/Frontend_Vercel"
@@ -63,8 +67,8 @@ def system_proc (screenplay):
 	print ("screenplay:", screenplay);
 	os.system (screenplay);
 
-def proc (screenplay):
-	print ({
+def proc_frontier (screenplay):
+	print ("proc_frontier:", {
 		"screenplay": screenplay,
 		"FE_Path": FE_Path
 	});
@@ -77,18 +81,24 @@ def proc (screenplay):
 	assert (result.returncode == 0);
 	print ("played:", screenplay);
 
-def build_rules ():
-	os.system ("rm -rf /Metro/.pnpm-store");
-	system_proc (f"rm -rf '{ Rules_Path }'");
-	
+
+def build_frontier_rules ():
 	#
 	#
 	#	FE Modules Rules
 	#
 	#
-	proc (["pnpm", "run", "build_frontend"])
-	proc (["pnpm", "run", "rules_build"])
+	#proc_frontier (["pnpm", "install"])	
+	#proc_frontier (["pnpm", "run", "build_for_python"])
+	proc_frontier (["pnpm", "run", "rules_build"])
 
+def build_python_rules ():
+	return;
+
+def build_rules ():
+	# os.system ("rm -rf /Metro/.pnpm-store");
+	system_proc (f"rm -rf '{ Rules_Path }'");
+	
 	
 	#
 	#
@@ -123,7 +133,7 @@ def build_rules ():
 	#	Need to build the frontend again for the PyPI module.
 	#		Svelnetics -> PyPI
 	#
-	proc (["pnpm", "run", "build_frontend"])
+	proc_frontier (["pnpm", "run", "build_for_python"])
 	
 	
 

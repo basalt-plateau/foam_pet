@@ -206,7 +206,7 @@ def clique ():
 			#	If False, the checks are run 
 			#	one at a time.
 			#
-			"simultaneous": True,
+			"simultaneous": False,
 			
 			#
 			#	[voluntary]

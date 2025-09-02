@@ -24,7 +24,7 @@ export PATH="/root/.local/bin:$PATH"
 #
 #/
 
-export PATH=$PATH:/Metro/vehicles/Octave/__glossary
+export PATH=$PATH:/Metro/vehicles/octave_nexus/__glossary
 
 #
 #

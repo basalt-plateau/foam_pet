@@ -46,7 +46,9 @@
 			<section>
 				<header>optional:::: stop docker containers</header>
 				<code>
+				
 					docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q)
+				
 				</code>
 			</section>
 		
@@ -55,7 +57,8 @@
 				<code>
 				
 					docker stop Octave_Nexus && docker rm Octave_Nexus				
-					docker run --name Octave_Nexus -v .:/Metro -e HOST_IP=host.docker.internal -p 22000:22000 -p 21000:21000 -p 443:443 -p 80:80 -it ubuntu:latest bash
+					docker run --name Octave_Nexus -v .:/Metro -p 22000:22000 -p 21000:21000 -p 443:443 -p 80:80 -it ubuntu:latest bash
+					# docker run --name Octave_Nexus -v .:/Metro -e HOST_IP=host.docker.internal -p 22000:22000 -p 21000:21000 -p 443:443 -p 80:80 -it ubuntu:latest bash
 					. /Metro/_plays/board/build_1.sh
 					
 				</code>	
@@ -136,7 +139,7 @@
 			<header>Python Module</header>
 				
 				(cd /Metro/Frontend_Vercel && pnpm run front)
-				Mech_Pet_1 harbor open
+				Octave_1 harbor open
 				
 			
 		</article>

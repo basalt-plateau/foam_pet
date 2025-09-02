@@ -6,26 +6,26 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
-name = "Octave"
-version = "1.0.0"
+name = "octave_nexus"
+version = "1.1.0"
 description = "Offline wallet program for Aptos."
 authors = []
-readme = "vehicles/Octave/readme.md"
+readme = "vehicles/octave_nexus/readme.md"
 packages = [
-    { include = "Octave", from = "vehicles" },
+    { include = "octave_nexus", from = "vehicles" },
 ]
 license = "Mix: GPL-3.0-only for originals + Laboratory Rules"
 
 exclude = [
-	"vehicles/Octave/_status/DB/**"
+	"vehicles/octave_nexus/_status/DB/**"
 ]
 include = [
-	"vehicles/Octave/sveltnetics_packets/**/*",
+	"vehicles/octave_nexus/sveltnetics_packets/**/*",
 ]
 
 
 [tool.poetry.scripts]
-Octave = 'Octave:clique'
+octave_nexus = 'octave_nexus:clique'
 
 [tool.poetry.dependencies]
 python = "^3.10"

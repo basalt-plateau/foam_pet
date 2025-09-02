@@ -29,7 +29,7 @@ charset-normalizer==3.4.3
     # via requests
 click==8.2.1
     # via
-    #   octave (pyproject.toml)
+    #   octave-nexus (pyproject.toml)
     #   biotech
     #   body-scan
     #   emergency
@@ -42,11 +42,11 @@ coverage==7.10.6
     #   biotech
     #   emergency
 cx-freeze==7.2.10
-    # via octave (pyproject.toml)
+    # via octave-nexus (pyproject.toml)
 dnspython==2.7.0
     # via pymongo
 emergency==2.0.0
-    # via octave (pyproject.toml)
+    # via octave-nexus (pyproject.toml)
 filelock==3.19.1
     # via cx-freeze
 flask==3.1.2
@@ -103,9 +103,9 @@ pexpect==4.9.0
 pip==25.2
     # via pipdeptree
 pip-licenses==5.0.0
-    # via octave (pyproject.toml)
+    # via octave-nexus (pyproject.toml)
 pipdeptree==2.28.0
-    # via octave (pyproject.toml)
+    # via octave-nexus (pyproject.toml)
 prettytable==3.16.0
     # via pip-licenses
 psutil==5.9.8
@@ -115,10 +115,10 @@ psutil==5.9.8
 ptyprocess==0.7.0
     # via pexpect
 pyasyncore==1.0.4
-    # via octave (pyproject.toml)
+    # via octave-nexus (pyproject.toml)
 pydash==8.0.5
     # via
-    #   octave (pyproject.toml)
+    #   octave-nexus (pyproject.toml)
     #   ships
     #   ventures
 pygments==2.19.2
@@ -145,13 +145,13 @@ referencing==0.36.2
     #   jsonschema-specifications
 requests==2.32.5
     # via
-    #   octave (pyproject.toml)
+    #   octave-nexus (pyproject.toml)
     #   biotech
     #   body-scan
     #   emergency
 rich==13.9.4
     # via
-    #   octave (pyproject.toml)
+    #   octave-nexus (pyproject.toml)
     #   biotech
     #   emergency
     #   ships
@@ -163,7 +163,7 @@ rpds-py==0.27.1
     #   referencing
 sanic==23.12.2
     # via
-    #   octave (pyproject.toml)
+    #   octave-nexus (pyproject.toml)
     #   biotech
     #   emergency
     #   somatic
@@ -177,10 +177,10 @@ setuptools==69.5.1
     #   cx-freeze
     #   ventures
 ships==1.9.0
-    # via octave (pyproject.toml)
+    # via octave-nexus (pyproject.toml)
 somatic==3.0.3
     # via
-    #   octave (pyproject.toml)
+    #   octave-nexus (pyproject.toml)
     #   ventures
 tinydb==4.8.2
     # via
@@ -203,7 +203,7 @@ urllib3==2.5.0
 uvloop==0.21.0
     # via sanic
 ventures==3.0.0
-    # via octave (pyproject.toml)
+    # via octave-nexus (pyproject.toml)
 wcwidth==0.2.13
     # via prettytable
 websockets==15.0.1

@@ -59,8 +59,8 @@
 			#	Rules: 
 			#		This builds the frontend and backend rules.
 			#
-			python3 /Metro/__Novel/Publishing/PyPI/Rules_Build.py
-			
+			#	python3 /Metro/__Novel/Publishing/PyPI/Rules_Build.py
+			#
 			
 			#
 			#	E2E: Selenium
@@ -70,6 +70,7 @@
 			#
 			#		cd _health_selenium && . build_1.sh && python3 regions/health.proc.py run
 			#
+			#
 			#		1 by 1:
 			#			python3 regions/health.proc.py run --path="Dapp_Network/change_net.Se.py"
 			#			python3 regions/health.proc.py run --path="Panels/Addresses/Choose_an_Address.Se.py"
@@ -77,11 +78,18 @@
 			#
 			#			python3 regions/health.proc.py run --path="Panels/Aptos_Account_Transfer_Bour/Verification_1.Se.py"
 			#			python3 regions/health.proc.py run --path="Panels/Aptos_Account_Transfer_Bour/Verification_2.Se.py"
-			#			
 			#
+			#			python3 regions/health.proc.py run --path="Panels/Aptos_Throw/Play_1.Se.py"
+			#			python3 regions/health.proc.py run --path="Panels/Faucet/check_1.Se.py"
+			#			
+			#			python3 regions/health.proc.py run --path="Resilience/Address_Qualities/Verification_1.Se.py"
+			#			python3 regions/health.proc.py run --path="Resilience/Amount_Field/Verification_1.Se.py"
+			#			python3 regions/health.proc.py run --path="Resilience/Hone_Focus/Verification_1.Se.py"
 			#
 			#		Optional:
 			#			python3 regions/health.proc.py run --path="Dapp_Network/change_net.Se.py"
+			#
+			#
 			#
 			cd _health_selenium && . build_1.sh
 			python3 regions/health.proc.py run
