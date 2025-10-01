@@ -15,34 +15,32 @@
 			#		_essence/merge/__init__.py
 			#
 			
-				
-				
 		<header>1.</header>
-			. /Metro/_plays/board/build_1.sh
+			. /Metro/_plays/board/build_1.sh	
 			
-			#//
-			#/
-			#	Frontend: Vitest + Lint
+		<header>Rules</header>
 			#
+			#	Rules:
+			#		Essentially, build the rules into the sveltnetics static (non-entropic),
+			#		the 
+			#
+			#		* build the frontend rules with the package.json
+			#		* build the py rules with the dev.md
+			#
+				
+		<header>Front</header>
+			#
+			#	* health
+			#	* lint
+			#	* build_for_python
 			#
 			(cd /Metro/Frontend_Vercel && pnpm run health)
 			(cd /Metro/Frontend_Vercel && pnpm run lint)
-				
-			#
-			#
-			#	Frontend: Build
-			#		
-			#		Location of build:
-			#			package.json
-			#			svelte.config.js
-			#
-			#		Rules.. builds the frontend
-			#
 			(cd /Metro/Frontend_Vercel && pnpm run build_for_python)
 				
 			
 		<header>Open the Harbor (start the server)</header>
-			Octave_1 harbor open
+			octave_nexus_1 harbor open
 		
 		
 		<header>3.</header>
@@ -51,25 +49,20 @@
 			#	Python: Internal Health Monitor
 			#
 			#
-			Octave_1 health
-				
-				
-	
-			#
-			#	Rules: 
-			#		This builds the frontend and backend rules.
-			#
-			#	python3 /Metro/__Novel/Publishing/PyPI/Rules_Build.py
-			#
-			
+			octave_nexus_1 health
+		
+
+		<header>E2E</header>
 			#
 			#	E2E: Selenium
 			#		* Needs to be non-root
 			#		* Needs to be on OS (not Docker)
 			#		* Can run this on the dev server.
 			#
-			#		cd _health_selenium && . build_1.sh && python3 regions/health.proc.py run
+			#		cd _health_selenium && . build_1.sh
 			#
+			#		( ) Together
+			#			python3 regions/health.proc.py run
 			#
 			#		1 by 1:
 			#			python3 regions/health.proc.py run --path="Dapp_Network/change_net.Se.py"

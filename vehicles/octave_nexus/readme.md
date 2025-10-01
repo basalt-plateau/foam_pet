@@ -10,6 +10,8 @@ like a "laptop", "desktop", etc.
 ---
 
 ## Rules (License) 
+This program is a mix.
+
 octave_nexus/Rules.E.HTML
 
 ---

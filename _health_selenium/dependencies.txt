@@ -22,16 +22,16 @@ certifi==2025.8.3
     #   selenium
 charset-normalizer==3.4.3
     # via requests
-click==8.2.1
+click==8.3.0
     # via
     #   body-scan
     #   emergency
     #   flask
-coverage==7.10.6
+coverage==7.10.7
     # via emergency
 deepdiff==7.0.1
     # via mech-pet-health-selenium (pyproject.toml)
-dnspython==2.7.0
+dnspython==2.8.0
     # via pymongo
 emergency==2.0.0
     # via mech-pet-health-selenium (pyproject.toml)
@@ -63,7 +63,7 @@ mako==1.3.10
     # via emergency
 markdown-it-py==4.0.0
     # via rich
-markupsafe==3.0.2
+markupsafe==3.0.3
     # via
     #   flask
     #   jinja2
@@ -81,7 +81,7 @@ outcome==1.3.0.post0
     #   trio-websocket
 pexpect==4.9.0
     # via emergency
-psutil==7.0.0
+psutil==7.1.0
     # via botanist
 ptyprocess==0.7.0
     # via pexpect
@@ -91,7 +91,7 @@ pygments==2.19.2
     #   rich
 pyjwt==2.10.1
     # via redis
-pymongo==4.14.1
+pymongo==4.15.1
     # via emergency
 pysocks==1.7.1
     # via urllib3
