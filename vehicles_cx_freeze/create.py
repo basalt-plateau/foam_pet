@@ -4,13 +4,16 @@
 	This doesn't work yet.
 "'''
 
+'''
+	What is the purpose of this?
+'''
+
 import os
 import time
 import shutil
 
-#version = "v2_1_0_0"
 
-version = "v1_1_0_0"
+version = "v2_0_0_0"
 Le_OS = "linux-x86_64"
 
 name_softwhere = f"octave_nexus.{ Le_OS }.{ version }"
@@ -18,16 +21,17 @@ name_rules = f"octave_nexus.{ Le_OS }.{ version }.Rules"
 
 
 assets_path = "/Metro/vehicles_cx_freeze/assets"
-build_path = "/Metro/vehicles_cx_freeze/build"
+
 distributions_path = f"/Metro/vehicles_cx_freeze/_distributions"
 
 #
 #	Build: Softwhere
 #
 #
+build_path = "/Metro/vehicles_cx_freeze/build"
 module_build_path = f"{ build_path }/{ name_softwhere }"
-module_rules_path = f"{ build_path }/{ name_softwhere }/lib/octave_nexus/Rules"
 module_build_path_zip = f"{ build_path }/{ name_softwhere }.zip"
+module_rules_path = f"{ build_path }/{ name_softwhere }/lib/octave_nexus/Rules"
 
 #
 #	Build: The outer rules
@@ -94,8 +98,8 @@ mimic ({
 	"to": f"{ module_build_path }/Rules.HTML"
 })
 mimic ({
-	"origin": f"{ assets_path }/Scroll.E.HTML",
-	"to": f"{ module_build_path }/Scroll.HTML"
+	"origin": f"{ assets_path }/Tutorial.E.HTML",
+	"to": f"{ module_build_path }/Tutorial.HTML"
 })
 #
 #--
@@ -125,7 +129,6 @@ mimic ({
 })
 #
 #--
-
 
 
 #

@@ -9,8 +9,6 @@
 
 "'''
 
-from cx_Freeze import setup, Executable
-
 '''
 # Dependencies are automatically detected, but they might need fine-tuning.
 build_exe_options = {
@@ -19,26 +17,24 @@ build_exe_options = {
 }
 '''
 
-# .py_3_11
+from cx_Freeze import setup, Executable
 
-version = "v1_1_0_0"
 
 
 #
 #
 #	OS: Linux
+#	
 #
-#
+'''
+	base:
+		gui -> linux?
+		Win32GUI
+'''
+version = "v2_0_0_0"
 name = f"octave_nexus.linux-x86_64.{ version }"
-
-#base = "Win32GUI"
 base = "gui"
 
-#
-#
-#--
-#
-#
 
 setup(
     name = "octave_nexus_cx",

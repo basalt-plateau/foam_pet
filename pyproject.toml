@@ -7,14 +7,14 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
 name = "octave_nexus"
-version = "2.0.0"
+version = "3.0.0"
 description = "Offline wallet program for Aptos."
 authors = []
 readme = "vehicles/octave_nexus/readme.md"
 packages = [
     { include = "octave_nexus", from = "vehicles" },
 ]
-license = "Mix: GPL-3.0-only for originals + Laboratory Rules"
+license = "Mix: GPL-3.0-only for originals + Modules Rules"
 
 exclude = [
 	"vehicles/octave_nexus/_status/DB/**"

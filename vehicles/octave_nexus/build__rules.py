@@ -27,20 +27,9 @@ def system_proc (screenplay):
 this_folder = pathlib.Path (__file__).parent.resolve ();
 # rules_folder = normpath (join (this_folder, "rules_py"));
 
-py_rules_entire = "/Metro/Frontend_Vercel/static/Rules_Py_Entire/Rules.json"
-py_rules_legends = "/Metro/Frontend_Vercel/static/Rules_Py_Legend/Legend.txt"
+py_rules_entire = "/Metro/Frontend_Vercel/static/Rules/Py_Entire.json"
+py_rules_legends = "/Metro/Frontend_Vercel/static/Rules/Py_Legend.txt"
 
-try:
-	os.mkdir (dirname (py_rules_entire))
-	print (f"Directory '{ py_rules_entire }' was created.")
-except Exception as e:
-	print(f"An error occurred: {e}")
-	
-try:
-	os.mkdir (dirname (py_rules_legends))
-	print (f"Directory '{ py_rules_legends }' was created.")
-except Exception as e:
-	print(f"An error occurred: {e}")
 
 system_proc (f"pip-licenses --with-license-file --format=json > '{ py_rules_entire }'")
 system_proc (f"pip-licenses > '{ py_rules_legends }'")
