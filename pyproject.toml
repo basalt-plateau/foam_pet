@@ -7,7 +7,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
 name = "octave_nexus"
-version = "1.1.0"
+version = "2.0.0"
 description = "Offline wallet program for Aptos."
 authors = []
 readme = "vehicles/octave_nexus/readme.md"

@@ -129,7 +129,7 @@ pyinotify==0.9.6
     # via ships
 pyjwt==2.10.1
     # via redis
-pymongo==4.15.1
+pymongo==4.15.2
     # via
     #   biotech
     #   emergency

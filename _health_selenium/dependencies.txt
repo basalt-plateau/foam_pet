@@ -91,7 +91,7 @@ pygments==2.19.2
     #   rich
 pyjwt==2.10.1
     # via redis
-pymongo==4.15.1
+pymongo==4.15.2
     # via emergency
 pysocks==1.7.1
     # via urllib3
